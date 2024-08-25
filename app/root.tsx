@@ -20,6 +20,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <script src="./node_modules/preline/dist/preline.js"></script>
       </body>
     </html>
   );
