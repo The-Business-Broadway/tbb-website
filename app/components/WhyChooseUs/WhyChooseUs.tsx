@@ -1,4 +1,4 @@
-import { EnhanceCustomerSatisfaction } from "~/icons/EnhanceCustomerSatisfaction";
+import { WhyChooseUsFeatureCard } from "./WhyChooseUsFeatureCard"
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -10,13 +10,12 @@ export const WhyChooseUs: React.FC = () => {
         <p className="mt-4 text-gray-600 text-lg">At CodeNinja, we believe in transforming businesses with innovative and reliable technology solutions.</p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <div className="flex items-center justify-start mb-4">
-              <EnhanceCustomerSatisfaction />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800">Customer-First Approach</h3>
-            <p className="mt-2 text-gray-600 text-sm">CodeNinja&apos;s problem-solving mindset and commitment to generating value through a deep understanding of business helps us forge long-term partnerships with our clients.</p>
-          </div>
+          <WhyChooseUsFeatureCard title="Customer-First Approach" description="CodeNinja&apos;s problem-solving mindset and commitment to generating value through a deep understanding of business helps us forge long-term partnerships with our clients." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/enhance-customer-satisfaction.svg" />
+          <WhyChooseUsFeatureCard title="Core Central Platform" description="We leverage our central development RAD platform, to integrate situational, vertical and domain-tuned intelligence to build market-competitive applications tailored to the business needs." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/360-degree.svg" />
+          <WhyChooseUsFeatureCard title="Leveraging Hybrid Intelligence" description="At CodeNinja, we capitalize on technology in the best way possible, leveraging human intelligence and artificial intelligence (AI) to boost productivity and provide transformative products and services." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/rapid-application-delivery.svg" />
+          <WhyChooseUsFeatureCard title="Industry Agnostic Solution Architects" description="Our vendor-neutral approach, global network of technical experts, and the capability to innovate position us to deliver value-added offerings across the globe." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/client-centric-orientation.svg" />
+          <WhyChooseUsFeatureCard title="Strategic Global Presence" description="Spread across 5 locations, CodeNinja's global strategic hubs strive to make innovative technology accessible, tackling complex problems across diverse domains." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/global-reach-local-expertise.svg" />
+          <WhyChooseUsFeatureCard title="CodeNinja Alliance Network" description="By bringing together individual technical consultants from FAANG companies and our in-house engineering teams, we enable businesses to access deep technical expertise at 90% less cost a significantly lower cost." imageURL="https://the-business-broadway.github.io/tbb-website-assets/why-choose-us/tailored-teams-agile-project-management.svg" />
         </div>
       </div>
     </div>
