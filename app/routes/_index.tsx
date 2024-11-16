@@ -2,8 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 import { ComparePlanDataRow } from "~/components/ComparePlans/ComparePlanDataRow";
 import { ComparePlanHeaderRow } from "~/components/ComparePlans/ComparePlanHeaderRow";
 import { PricingCard } from "~/components/PricingCard";
-// import { Footer } from "~/components/Footer";
-// import { Hero } from "~/components/Hero";
+import { Footer } from "~/components/Footer";
+import { Hero } from "~/components/Hero";
+import { WhyChooseUs } from "~/components/WhyChooseUs/WhyChooseUs";
 
 export const meta: MetaFunction = () => {
   return [{ title: "The Business Broadway" }, { name: "description", content: "Welcome to The Business Broadway!" }];
@@ -419,7 +420,7 @@ export default function Index() {
               <ComparePlanDataRow featureTitle="ETH gas used" featureAvailabilityByPlan={ethGasUsedAvailabilityByPlan} />
             </div>
             <div className="mt-6 space-y-4 lg:space-y-0">
-            <ComparePlanHeaderRow title="Social data" />
+              <ComparePlanHeaderRow title="Social data" />
               <ComparePlanDataRow featureTitle="Dev activity" featureAvailabilityByPlan={devActivityAvailabilityByPlan} />
               <ComparePlanDataRow featureTitle="Topic search" featureAvailabilityByPlan={topicSearchAvailabilityByPlan} />
               <ComparePlanDataRow featureTitle="Relative social dominance" featureAvailabilityByPlan={relativeSocialDominanceAvailabilityByPlan} />
@@ -482,7 +483,7 @@ export default function Index() {
 
                   <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal dark:text-neutral-200">To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.</p>
 
-                  <footer className="mt-6">
+                  {/* <footer className="mt-6">
                     <div className="flex items-center">
                       <div className="lg:hidden shrink-0">
                         <img className="size-12 rounded-full" src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar" />
@@ -492,13 +493,16 @@ export default function Index() {
                         <p className="text-sm text-gray-600 dark:text-neutral-400">Head of Finance</p>
                       </div>
                     </div>
-                  </footer>
+                  </footer> */}
                 </blockquote>
               </div>
             </div>
           </div>
         </div>
+        <WhyChooseUs />
       </main>
+      <Hero />
+      <Footer />
     </>
   );
 }
