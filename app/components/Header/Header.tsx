@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <img src="https://via.placeholder.com/50" alt="Logo" className="w-10 h-10" />
-            <span className="font-bold text-xl">CODENINJA</span>
+            <span className="font-bold text-xl">The Business Broadway</span>
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="/" className="text-gray-600 hover:text-red-600">

@@ -1,8 +1,9 @@
+import { DarkGraySectionLayout } from "~/layouts/DarkGraySectionLayout";
 import { OurCoreCompetenciesCard } from "./OurCoreCompetenciesCard";
 
 export const OurCoreCompetencies: React.FC = () => {
   return (
-    <div className="bg-gray-900 py-16">
+    <DarkGraySectionLayout>
       <div className="container mx-auto px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-white">
           Our <span className="text-red-600">Core</span> Competencies
@@ -28,6 +29,6 @@ export const OurCoreCompetencies: React.FC = () => {
           ]} />
         </div>
       </div>
-    </div>
+    </DarkGraySectionLayout>
   );
 };

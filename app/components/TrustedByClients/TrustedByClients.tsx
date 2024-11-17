@@ -7,7 +7,7 @@ export const TrustedByClients: React.FC = () => {
         <h2 className="text-4xl font-bold text-gray-800">
           Trusted By <span className="text-red-600">Clients</span>
         </h2>
-        <p className="mt-4 text-gray-600 text-lg">For over a decade, CodeNinja has delivered transformative, value-added solutions, driving innovation and success across diverse industries.</p>
+        <p className="mt-4 text-gray-600 text-lg">For over a decade, The Business Broadway has delivered transformative, value-added solutions, driving innovation and success across diverse industries.</p>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5 text-center">
           <TrustedByClientCard imageURL="https://the-business-broadway.github.io/tbb-website-assets/clients/lifeforce.svg" />
           <TrustedByClientCard imageURL="https://the-business-broadway.github.io/tbb-website-assets/clients/locka.svg" />

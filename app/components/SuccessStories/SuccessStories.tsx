@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DarkGraySectionLayout } from "~/layouts/DarkGraySectionLayout";
 
 export const SuccessStories = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -6,7 +7,7 @@ export const SuccessStories = () => {
   const slides = [
     {
       title:
-        "Building an E-Logistics Powerhouse with a CodeNinja's Central Proprietary RAD Platform",
+        "Building an E-Logistics Powerhouse with a The Business Broadway's Central Proprietary RAD Platform",
       image: "https://via.placeholder.com/400x250",
     },
     {
@@ -33,7 +34,7 @@ export const SuccessStories = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-8">
+    <DarkGraySectionLayout>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Text Section */}
         <div>
@@ -98,6 +99,6 @@ export const SuccessStories = () => {
           </div>
         </div>
       </div>
-    </section>
+    </DarkGraySectionLayout>
   );
 };
