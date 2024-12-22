@@ -1,0 +1,4 @@
+*.js
+*.cjs
+./vite.config.js
+./vitest.config.js

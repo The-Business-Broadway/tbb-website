@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LightGraySectionLayout } from "~/layouts/LightGraySectionLayout";
+import { WhyChooseUsFeatureCard } from "../WhyChooseUs/WhyChooseUsFeatureCard";
 
 // Define the Zod schema
 const formSchema = z.object({
@@ -31,7 +32,7 @@ export const ContactSection: React.FC = () => {
 
   return (
     <LightGraySectionLayout>
-      <div className="flex items-center justify-center">
+      <div className="container mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row">
           {/* Form Section */}
           <div>
@@ -39,7 +40,7 @@ export const ContactSection: React.FC = () => {
               Tell Us How We Can <span className="text-red-500">Help?</span>
             </h2>
             <p className="text-gray-500 mt-2">Describe your request — we typically respond within a couple of business hours.</p>
-            <form onSubmit={handleSubmit(onSubmit)} className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-6 grid grid-cols-3 md:grid-cols-2 gap-4">
               <div>
                 <input type="text" placeholder="Your Name" {...register("name")} className="p-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500" />
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
@@ -63,7 +64,8 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
+          {/* <div className="grid grid-cols-1 md:grid-cols-1"></div> */}
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-1 gap-4">
             <img src="https://the-business-broadway.github.io/tbb-website-assets/contact-us/contact-us.webp" alt="Contact Us" className="max-h-96" />
           </div>
         </div>
