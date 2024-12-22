@@ -5,11 +5,9 @@ import { copyFileSync } from "node:fs";
 import { join } from "node:path";
 
 export default defineConfig({
-  base: "/tbb-website/",
   plugins: [
     remix({
       ssr: false,
-      basename: "/tbb-website/",
       buildEnd(args) {
         if (!args.viteConfig.isProduction) return;
 
