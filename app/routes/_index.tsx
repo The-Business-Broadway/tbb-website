@@ -19,14 +19,17 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <Header />
+      <div className="sticky top-0 bg-white shadow z-50">
+        <Header />
+      </div>
       <main id="content">
         <Hero />
         <TrustedByClients />
         <OurCoreCompetencies />
         <WhyChooseUs />
         <OurCoreServices />
-        <Testimonials />
+        <TrustedByClients />
+        {/* <Testimonials /> */}
         <SuccessStories />
         <TeamSection />
         <AboutSection />

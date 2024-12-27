@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Technologies</h3>
             <ul className="space-y-2">
@@ -56,10 +56,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="my-8 border-t border-gray-700"></div>
 
-        {/* Locations */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Locations</h3>
           <h4 className="text-lg font-bold text-gray-400 uppercase mb-4">
@@ -99,15 +97,15 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Divider */}
-        <div className="my-8 border-t border-gray-700"></div>
+        {/* <div className="my-8 border-t border-gray-700"></div> */}
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400">
-            Copyright The Business Broadway Inc. 2024 All rights Reserved.
+            Copyright The Business Broadway Inc. 2025 All rights Reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="/" className="text-gray-400 hover:text-white">
